@@ -1,0 +1,55 @@
+
+ALGORITHM FILES
+---------------
+
+Standalone files:
+   bmopt.[ch]           -  a stand-alone version of the best Boyer-Moore alg.
+   stree.[ch]           -  a stand-alone implementation of suffix trees
+   doc/stree.doc        -  documentation for stree.[ch]
+
+Files used by strmat, but which can be extracted and used separately:
+   ac.[ch]              -  Aho-Corasick algorithm
+   bm.[ch]              -  Boyer-Moore algorithms
+   bmset.[ch]           -  "Set of Patterns" Boyer-Moore algorithms
+   bmset_naive.[ch]     -  "Set of Patterns" matching using separate
+                               Boyer-Moore matching for each pattern
+   kmp.[ch]             -  Knuth-Morris-Pratt algorithms
+   naive.[ch]           -  Naive exact matching algorithm
+   sary.[ch]            -  Algorithms building a suffix array
+   sary_match.[ch]      -  Algorithms for exact matching with a suffix array
+   sary_zerkle.[ch]     -  Building a suffix array using Zerkle's implementation
+   stree_lca.[ch]       -  The suffix tree least common ancestor algorithms
+   stree_decomposition.[ch]    -  Lempel-Ziv decomposition algorithms
+   repeats_primitives.[ch]     -  Crochemore's alg. for prim. tandem repeats
+   repeats_supermax.[ch]       -  Algorithm for finding supermaximals
+   repeats_nonoverlapping.[ch] -  Algorithm for n.o. maximals (Croch. variant)
+   repeats_bigpath.[ch]        -  Algorithm for n.o. maximals (big path alg.)
+   repeats_tandem.[ch]         -  Algorithm for finding tandem repeats/arrays
+   repeats_vocabulary.[ch]     -  Algorithm for finding tandem vocabulary
+   repeats_linear_occs.[ch]    -  Algorithm for finding tandem repeats
+   z.[ch]               -  Z-values construction & exact matching algorithms
+
+Algorithm files which can be used only in strmat:
+   stree_strmat.[ch]    -  Implementation of suffix trees
+   stree_ukkonen.[ch]   -  suffix tree construction using Ukkonen's algorithm
+   stree_weiner.[ch]    -  suffix tree construction using Weiner's algorithm
+
+
+
+PROGRAM FILES
+-------------
+
+strmat.[ch]        -  Main program file
+
+more.[ch]          -  procedures implementing the "more"-like output
+                         (can be extracted and used separately)
+strmat_alpha.[ch]  -  alphabet mapping procedures
+strmat_fileio.[ch] -  reading and writing sequences from files
+strmat_match.[ch]  -  data structures for storing and reporting matches
+strmat_print.[ch]  -  suffix tree printing procedures
+strmat_seqary.[ch] -  procedures maintaining the set of current sequences
+strmat_stubs*.[ch] -  stub procedures called from strmat.c which handle
+                         the execution of the algorithms (all calls to
+                         the algorithms occur in these files)
+strmat_util.[ch]   -  utility procedures used by the menu.c interactions
+

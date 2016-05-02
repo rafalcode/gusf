@@ -1,0 +1,48 @@
+TYPE:  Text
+IDENT:  
+TITLE:  AAA 1
+ALPHABET:  ASCII
+LENGTH:  1
+SEQUENCE:
+a
+//
+TYPE:  Text
+IDENT:  
+TITLE:  AAA 2
+ALPHABET:  ASCII
+LENGTH:  2
+SEQUENCE:
+aa
+//
+TYPE:  Text
+IDENT:  
+TITLE:  AAA 3
+ALPHABET:  ASCII
+LENGTH:  3
+SEQUENCE:
+aaa
+//
+TYPE:  Text
+IDENT:  
+TITLE:  AAA 5
+ALPHABET:  ASCII
+LENGTH:  5
+SEQUENCE:
+aaaaa
+//
+TYPE:  Text
+IDENT:  
+TITLE:  AAA 10
+ALPHABET:  ASCII
+LENGTH:  10
+SEQUENCE:
+aaaaaaaaaa
+//
+TYPE:  Text
+IDENT:  
+TITLE:  AAA 100
+ALPHABET:  ASCII
+LENGTH:  100
+SEQUENCE:
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+//
