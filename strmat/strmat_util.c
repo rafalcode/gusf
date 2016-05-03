@@ -11,7 +11,7 @@
 
 extern int util_menu(void);
 
-extern FILE *fpout;
+#define fpout stdin
 
 static int buf_len = 0;
 static char *inbuf = NULL;
@@ -649,7 +649,7 @@ void fread_formatted(void)
       printf("done.");
       break;
 
-    case NULL:
+    case ERROR:
       delete_element(elem_num);
       break;
 
@@ -744,7 +744,7 @@ void fwrite_formatted(void)
                 new_string->title);
         break;
 
-      case NULL:
+      case ERROR:
       case MISMATCH:
         break;
       }

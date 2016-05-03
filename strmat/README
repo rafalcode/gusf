@@ -1,6 +1,10 @@
 
 STRMAT -  Version 1.5 Notes.
 
+Mods RF: 
+- "FILE *fpout stdin" not accepted so just do a #define on it.
+- "case NULL": NULL can't be used a #define, it being a keyword most probably. Just replaced it with ERROR.
+
 
    IMPORTANT NOTE:  This software is for internal use only.  This is
    --------------   NOT a completed software product available for
